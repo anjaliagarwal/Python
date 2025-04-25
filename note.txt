@@ -1,0 +1,174 @@
+1. Installing Anaconda ---- checking anaconda install successfully 
+
+	open terminal 
+        	conda 
+  		conda activate base 
+		python
+
+2. Install VS Code 
+
+	To open VS code from the folder - open terminal in the folder - code .
+
+3. environment setup in the terminal 
+
+	conda create -p venv python==3.12
+
+	-p represent prefix / current directory
+
+4. After creating a environment need to activate it - 
+      	conda activate venv/
+
+5. Install Library
+	pip install pandas
+	
+	pandas - helps to read excel csv files in python
+
+6. want to install multiple library in a project 
+	create a file reqirements.txt  write all the library required to install 
+	
+	pip install -r requirements.txt
+	-r = read
+
+7. Creating a Project 1-Python Basics  ----- new file 1.0-basics.ipynb         ipynb- Jupiter NoteBook File 
+							ipynb create for eperiment purpose 
+
+						basics.py   --- for production
+
+				ipynb - select kernal -- python environment - select virtual environment
+
+				in the code - 1+1 while running get error 
+
+				either from the terminal install - pip install ipykernel
+								or in the code !pip install ipykernel
+
+				ipykernel  doesn't need to include in global requirements.txt file as 
+						it will not go to production - it is for notebook
+
+		To run basics.py --- open the terminal -- check the folder path --- python basics.py
+
+8.  Single Comment - ###
+	Multiple Line Comment - """  """ / ''' '''
+
+9. first_name any variable ust displaying the information - 'Anjali'
+
+	print(first_name) - it will print it ignoring the quote - Anjali
+
+10. If a string is numeric than can be convert it in integer but if it is a character than give error 
+
+		int('1')  == 1 
+ 		int('Anjali')  error will occur
+
+11. Int - Number without decimal  -- phone no, id, pincode
+    float - Number with decimal  -- salary, work eperience, price , temperature
+    str  - characters + special character  = A-Z a-z 0-9
+
+
+12. Python Operator - symbol or charactor
+
+			Data  Science ( Tools   +   Algo )
+			Tools - Statistics 
+			Algo  - ML
+
+
+13 Operator Airthmatic
+	+   - add
+	-   - subr
+	%   - module 
+	*   - mul
+	/    - div
+	//   - floor division  - round off to the nearest value
+	**   - exponential
+
+	Assignment 
+	=
+	+=
+	-=
+	/=
+	//=
+	%=
+	**=
+
+	Comparision 
+	==
+	>
+	<
+	>=
+	<=
+	!=
+
+	Logical Operator
+	
+		Truth Table 
+
+	Operator 	A	 B 	Result
+	AND		0	 0	0
+			1	 1	1
+			0	 1	0
+			1 	 0 	0
+		
+	Both of them should be True
+	
+	
+	Operator 	A	 B 	Result
+	OR		0	 0	0
+			1	 1	1
+			0	 1	1
+			1 	 0 	1
+		
+	iF any of them be True
+
+	Operator 	A	 	Result
+	NOT		0	 	1
+			1	 	0
+
+	
+	Operator 	A	 B 	Result
+	xOR		0	 0	0
+			1	 1	0
+			0	 1	1
+			1 	 0 	1	
+
+	Only when one is true
+
+	Bitwise Operator (Binary Numbers)
+	&	and
+	|	or
+	^	xor
+	~	not
+
+		
+
+14 Removing Spaces - 
+		lstrip()
+		rstrip() 
+		'    Anjali   '  
+		strip() - remove from both side spaces 
+
+
+15. Control Flow - controlling the execution of the code.
+
+	a. Conditional Statement 
+		if else
+
+16. List - Collection of multiple data types 
+	it accept dublicate value also.
+	it accept multiple data types.
+
+	a= []
+	
+	Methods - 
+	
+	a.append(value) - want to add the value at the last of the list 
+	
+	slcing - syntax
+		a[start : end(exclusive)]
+
+17 when you pass a string to a list format 
+	import ast 
+
+	
+	take a string 
+	info = input('Enter user details: ')
+	info = ast.literal_Eval(info)
+	print(info)
+	print(type(info))3
