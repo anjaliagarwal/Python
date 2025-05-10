@@ -239,3 +239,38 @@
 			value - it can be int, float, tuple, list , set , Dictionary
 
 			key - int , str, float
+
+			If there are multiple values - seperated by key and value pair by comma
+			Key should be unique. value can be same 
+
+			Example - 
+
+					emp_details = {
+						"001" : ["moanl","India"],
+						"002": ["lucas","brazil"],
+						"003": ["asher","Saudi Arabia",2]
+					}
+
+					emp_Details.keys()
+					- dict_keys(["001","002","003"])
+
+					emp.details.values()
+					- dict_values(["monal","India"],["lucas","brazil"],["asher","Saudi Arabia",2])
+
+19 -  
+	Loops
+
+	Iterator - An object that can be iterate. 
+		list(), tuples(), Dictionary(), Sets()
+
+	Traversing - getting values one by one.
+
+	Range() - 
+		range(start , stop, step)
+
+		start - Including
+		stop - Excluding
+		step - Difference between each number
+
+		0 - start value by default 
+		1 - step size by default
