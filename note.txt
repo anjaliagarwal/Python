@@ -172,3 +172,70 @@
 	info = ast.literal_Eval(info)
 	print(info)
 	print(type(info))3
+
+18 						Data Types 
+		Mutable 						Inmutable
+		List							int , flost , string , tuples
+		Dictionary
+		sets	
+
+		Mutable - Able to change or update same cell (Id will be same for the variable)
+
+
+		List 
+
+				It append in the same sequence 
+
+				a = [1,2]
+				a.append(3)
+
+				a = [1,2,3].  - sequence will be same 
+
+				syntax -  a = []   /. a = list()
+
+				In List a value to add - a.append(value)
+
+				To extend the list with another list =  list1.extend(list2). - address will remain the same
+
+		Tuple 
+				the value of the variable cannot be change 
+				we use when we don't want to change the data 
+
+				suppose - week [ Mon, Tues]
+							Month (Jan, Feb, Mar ..)
+
+				('abc',[1,2],'id)
+
+			syntax -  a = ()   / a = tuple()
+
+			In tuple cannot have the function extend, update and append as we cannot edit the tuple - It is immutable
+
+		Sets -  It is un-ordered. It will sort itself. 
+				It only contains unique values, if any dublicate value comes it automatically remove them.
+
+				a = {2,1,4,3}
+				print (a)
+
+				output = {1,2,3,4}
+
+				set1 = {3,4,2,1,1,1,5}
+
+				print(set1)
+
+				output = {1,2,3,4,5}
+
+				syntax -  a = {}. / a = sets()
+
+				In set to add the value = set1.add(value)
+
+				In set use update - set1.update(set2) - address will be the same
+
+		Dictionary - 
+
+			It uses key and value pair to store the data
+
+			a = {0 : value }
+
+			value - it can be int, float, tuple, list , set , Dictionary
+
+			key - int , str, float
