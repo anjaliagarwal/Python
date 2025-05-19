@@ -274,3 +274,21 @@
 
 		0 - start value by default 
 		1 - step size by default
+
+	To Control the flow of the loop 
+
+		1. Continue - skip the current flow
+
+		2. break - abort the execution.
+
+	For Loop - Applied when we know how many times loop will run
+
+	While Loop - run till the condition get false
+
+20 Functions 
+
+	Non keywaord arguments - *args - it take only tuple values
+
+	KeyWaord Arguments = **kwargs - it will be a dictionary - **variable_name
+
+21 File Operation and Exception
